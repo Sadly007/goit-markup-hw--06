@@ -906,7 +906,7 @@ button {
 .footer-soc-icon {
     width: 20px;
     height: 20px;
-    fill: #FFF;
+    fill: var(--primery-white-color);
 }
 
 .footer-text {
@@ -915,7 +915,7 @@ button {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--primery-white-color);
     margin-bottom: 20px;
 }
 
@@ -1028,11 +1028,12 @@ button {
 .modal-text {
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primery-text-color);
     margin-bottom: 12px;
+    margin-top: 0;
 }
 
 /* input {
@@ -1048,7 +1049,7 @@ button {
 .modal {
     width: 528px;
     min-height: 581px;
-    background-color: #ffffff;
+    background-color: var(--primery-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
@@ -1060,8 +1061,8 @@ button {
 }
 
 .modal-close-btn {
-    background-color: #ffffff;
-    border: 1px solid #ffffff;
+    background-color: var(--primery-white-color);
+    border: 1px solid var(--primery-white-color);
     padding: 0;
     position: absolute;
     top: 8px;
@@ -1078,12 +1079,14 @@ button {
     display: block;
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.16;
     /* identical to box height */
     
     letter-spacing: 0.01em;
     
-    color: #757575;
+    color: var(--title-text-color);
+
+    margin-bottom: 4px;
 }
 
 /* .modal-name::after {
@@ -1095,6 +1098,10 @@ button {
     background-repeat: no-repeat;
 } */
 
+.modal-name {
+    margin-bottom: 4px;
+}
+
 .textarea {
     padding: 16px 12px;
     font-family: inherit;
@@ -1105,7 +1112,7 @@ button {
 .textarea-text {
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.16;
     letter-spacing: 0.01em;
     height: 120px;
     
@@ -1138,6 +1145,10 @@ button {
     
 }
 
+.modal-textarea {
+    margin-bottom: 20px;
+}
+
 .modal-icon {
     position: absolute;
     left: 15px;
@@ -1148,11 +1159,14 @@ button {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-checked {
+    margin-left: 14px;
+}
 
 .check-text {
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     
     letter-spacing: 0.03em;
     
@@ -1225,6 +1239,7 @@ button {
     align-items: center;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 30px;
 
     font-style: normal;
     font-weight: 700;
